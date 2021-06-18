@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <data>
+<!--        <import type="android.view.View"/>-->
+        <variable
+            name="viewModel"
+            type="com.na.dgsw.gongyou_android.presentation.ui.main.viewmodel.SendMainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/file_kind_list_item"
+            android:background="#FFFFFF"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
